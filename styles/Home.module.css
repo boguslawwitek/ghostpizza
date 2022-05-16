@@ -100,6 +100,18 @@
   margin-right: 7px;
 }
 
+.special-word1 {
+  color: #edb265;
+  font-size: 2rem;
+}
+
+.special-word2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.1rem;
+  color: #edb265;
+}
+
 @media (max-width: 930px) {
 
   .main {

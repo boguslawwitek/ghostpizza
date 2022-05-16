@@ -7,6 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import stylesHeader from '../styles/Header.module.css';
+import config from "../config.json";
+const umamiDataWebsiteID = config.umamiDataWebsiteID;
+const umamiSrc = config.umamiSrc;
 
 export default function Home() {
   const [innerWidth, setInnerWidth] = useState(0);
@@ -27,7 +30,8 @@ export default function Home() {
 
   return (<>
       <Head>
-        <meta charset="UTF-8" />
+        {umamiDataWebsiteID && umamiSrc ? <script async defer data-website-id={umamiDataWebsiteID} src={umamiSrc}></script> : null}
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/png" href="/images/favicon.png" />
         <title>Ghost Pizza</title>
@@ -57,8 +61,8 @@ export default function Home() {
           <h1>Witaj na stronie pizzeri GhostPizza.</h1>
           <p className={styles.text}>Masz ochotę na pizzę?</p>
           <p className={styles.text}>Zamów już teraz z dowozem lub odbiorem.</p>
-          <p className={classNames(styles.text, styles.promo)}>Druga pizza (30cm) -50% taniej (od poniedziałku do czwartku).</p>
-          <p className={classNames(styles.text, styles.special)}>Dowóz na terenie Obornik gratis, poza Obornikami 1,5zł/km (tylko zamówienia powyżej 35 zł). Zamówienia z dowozem najpóźniej na 30 minut przed zamknięciem. Płatność kartą po uprzednim poinformowaniu.</p>
+          <p className={classNames(styles.text, styles.promo)}><span className={styles['special-word1']}>Promocja</span> Druga pizza (30cm) -50% taniej (od poniedziałku do czwartku).</p>
+          <p className={classNames(styles.text, styles.special)}>Dowóz na terenie Obornik <span className={styles['special-word2']}>gratis</span>, poza Obornikami 1,5zł/km (tylko zamówienia powyżej 35 zł). Zamówienia z dowozem najpóźniej na 30 minut przed zamknięciem. Płatność kartą po uprzednim poinformowaniu.</p>
           <a className="phone-link" href='tel:724444560'><div className={styles.phone}><FontAwesomeIcon className={styles['phone-icon']} icon={faPhone} /> 72 4444 560</div></a>
         </div>
         <div className={styles.right}>

@@ -4,6 +4,9 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import config from "../config.json";
+const umamiDataWebsiteID = config.umamiDataWebsiteID;
+const umamiSrc = config.umamiSrc;
 
 const SmallPizza = function SmallPizza() {return (
   <img src="/images/30.png" alt="Trzydziesto centymetrowa pizza" height="30px" />
@@ -24,7 +27,8 @@ const PepperIcon = function PepperIcon() {return (
 export default function Menu() {
   return (<div className={styles.bg}>
       <Head>
-        <meta charset="UTF-8" />
+        {umamiDataWebsiteID && umamiSrc ? <script async defer data-website-id={umamiDataWebsiteID} src={umamiSrc}></script> : null}
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/png" href="/images/favicon.png" />
         <title>Ghost Pizza | Menu</title>
@@ -97,12 +101,12 @@ export default function Menu() {
             <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
           </div>
           <div className={styles.product}>
-            <div className={styles.name}><PepperIcon /><PepperIcon /> 9. The Ring</div>
+            <div className={styles.name}>9. The Ring <PepperIcon /><PepperIcon /></div>
             <div>sos pomidorowy, ser, salami, cebula, jalapeno</div>
             <div className={styles.price}><span><SmallPizza />31zł</span> <span><MediumPizza />44zł</span><span><BigPizza />57zł</span></div>
           </div>
           <div className={styles.product}>
-            <div className={styles.name}><PepperIcon /> 10. Dracula</div>
+            <div className={styles.name}>10. Dracula <PepperIcon /></div>
             <div>sos pomidorowy, ser, tuńczyk, cebula, czosnek, sos amerykański</div>
             <div className={styles.price}><span><SmallPizza />31zł</span> <span><MediumPizza />44zł</span><span><BigPizza />57zł</span></div>
           </div>
@@ -122,7 +126,7 @@ export default function Menu() {
             <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
           </div>
           <div className={styles.product}>
-            <div className={styles.name}><PepperIcon /> 14. Piła</div>
+            <div className={styles.name}>14. Piła <PepperIcon /></div>
             <div>sos pomidorowy, ser, salami, konfitura cebulowa, ser kozi, wasabi</div>
             <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
           </div>
@@ -167,7 +171,7 @@ export default function Menu() {
             <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
           </div>
           <div className={styles.product}>
-            <div className={styles.name}><PepperIcon /><PepperIcon /> 23. Ghost Pizza</div>
+            <div className={styles.name}>23. Ghost Pizza <PepperIcon /><PepperIcon /></div>
             <div>sos pomidorowy, ser, podwójny kurczak, ser pleśniowy, jalapeno</div>
             <div className={styles.price}><span><SmallPizza />36zł</span> <span><MediumPizza />51zł</span><span><BigPizza />66zł</span></div>
           </div>
@@ -210,16 +214,16 @@ export default function Menu() {
             <div className={styles.name}>Tysiąca wysp</div>
           </div>
           <div className={styles.product}>
-            <div className={styles.name}><PepperIcon /> Ostry</div>
+            <div className={styles.name}>Ostry <PepperIcon /><PepperIcon /></div>
           </div>
           <div className={styles.product}>
-            <div className={styles.name}><PepperIcon /> Amerykański</div>
+            <div className={styles.name}>Amerykański <PepperIcon /><PepperIcon /></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>BBQ</div>
           </div>
           <div className={styles.product}>
-            <div className={styles.name}><PepperIcon /> Serowy chili</div>
+            <div className={styles.name}>Serowy chili <PepperIcon /></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>Pomidorowy</div>
@@ -228,7 +232,7 @@ export default function Menu() {
             <div className={styles.name}>Ketchup curry</div>
           </div>
           <div className={styles.product}>
-            <div className={styles.name}><PepperIcon /> Słodkie chili</div>
+            <div className={styles.name}>Słodkie chili <PepperIcon /></div>
           </div>
         </div>
         <h2>Napoje:</h2>
