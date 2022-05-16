@@ -78,7 +78,7 @@ export default function Home() {
             <div><div>sobota</div>	<div><span className={styles.bold}>12:00</span>–<span className={styles.bold}>00:00</span></div></div>
             <div><div>niedziela</div> <div><span className={styles.bold}>12:00</span>–<span className={styles.bold}>23:00</span></div></div>
           </div>
-          <div className={styles.mapouter}><div className={styles['gmap_canvas']}><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=GhostPizza%20Oborniki&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe></div></div>
+          <div className={styles.mapouter}><div className={styles['gmap_canvas']}><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=GhostPizza&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe></div></div>
         </div>
       </main>
       <Footer />
