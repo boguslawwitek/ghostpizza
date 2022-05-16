@@ -1,0 +1,56 @@
+.header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 45px;
+    font-weight: 400;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  
+  .header ul a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 3rem;
+  }
+  
+  .header ul a:hover {
+    text-decoration: underline;
+  }
+  
+  .header {
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 2000px;
+  }
+
+  @media (max-width: 480px) {
+
+    .header ul a {
+      font-size: 2.5rem;
+    }
+
+    .logo {
+      width: 100%;  
+      height: unset;
+    }
+  
+  }
+  
+  @media (max-width: 280px) {
+  
+    .header ul a {
+      font-size: 1.6rem;
+    }
+  
+  }

@@ -1,0 +1,40 @@
+.footer {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #242422;
+    padding: 20px 0;
+  }
+  
+  .footer a {
+    color: #edb265;
+  }
+
+  .footer-icons {
+    margin-right: 5px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+  
+  .links a {
+    margin-right: 20px;
+    color: white;
+    display: block;
+  }
+  
+  .links a > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
