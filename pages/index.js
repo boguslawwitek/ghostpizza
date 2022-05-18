@@ -58,7 +58,7 @@ export default function Home() {
       <Header>{innerWidth > 1450 ? <img className={stylesHeader.logo} src="/images/logo_desktop.png" alt="Logo pizzeri GhostPizza" /> : <img className={stylesHeader.logo} src="/images/logo.png" alt="Logo pizzeri GhostPizza" />}</Header>
       <main className={styles.main}>
         <div className={styles.left}>
-          <h1>Witaj na stronie pizzeri GhostPizza.</h1>
+          <h1>Witaj na stronie Pizzerii GhostPizza.</h1>
           <p className={styles.text}>Masz ochotę na pizzę?</p>
           <p className={styles.text}>Zamów już teraz z dowozem lub odbiorem.</p>
           <p className={classNames(styles.text, styles.promo)}><span className={styles['special-word1']}>Promocja</span> Druga pizza (30cm) -50% taniej (od poniedziałku do czwartku).</p>
