@@ -10,6 +10,10 @@
   font-size: 3rem;
 }
 
+.container h1 span {
+  text-transform: uppercase;
+}
+
 .text {
   font-size: 2rem;
 }

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import config from "../config.json";
+import Script from 'next/script';
 const umamiDataWebsiteID = config.umamiDataWebsiteID;
 const umamiSrc = config.umamiSrc;
 
@@ -21,13 +22,13 @@ const BigPizza = function BigPizza() {return (
 )}
 
 const PepperIcon = function PepperIcon() {return (
-  <img src="/images/pepper.png" height="30px" />
+  <img src="/images/pepper.png" alt="" height="30px" />
 )}
 
 export default function Menu() {
   return (<div className={styles.bg}>
+      {umamiDataWebsiteID && umamiSrc ? <Script src={umamiSrc} data-website-id={umamiDataWebsiteID} async defer></Script> : null}
       <Head>
-        {umamiDataWebsiteID && umamiSrc ? <script async defer data-website-id={umamiDataWebsiteID} src={umamiSrc}></script> : null}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/png" href="/images/favicon.png" />
@@ -183,7 +184,6 @@ export default function Menu() {
           <div className={styles.product}>
             <div className={styles.name}>25. Ty będziesz następna...</div>
             <div>pizza na życzenie</div>
-            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
           </div>
         </div>
         <h2>Dodatki:</h2>

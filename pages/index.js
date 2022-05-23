@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import stylesHeader from '../styles/Header.module.css';
 import config from "../config.json";
+import Script from 'next/script';
 const umamiDataWebsiteID = config.umamiDataWebsiteID;
 const umamiSrc = config.umamiSrc;
 
@@ -29,8 +30,8 @@ export default function Home() {
   }, [])
 
   return (<>
+      {umamiDataWebsiteID && umamiSrc ? <Script src={umamiSrc} data-website-id={umamiDataWebsiteID} async defer></Script> : null}
       <Head>
-        {umamiDataWebsiteID && umamiSrc ? <script async defer data-website-id={umamiDataWebsiteID} src={umamiSrc}></script> : null}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/png" href="/images/favicon.png" />
@@ -58,7 +59,7 @@ export default function Home() {
       <Header>{innerWidth > 1450 ? <img className={stylesHeader.logo} src="/images/logo_desktop.png" alt="Logo pizzeri GhostPizza" /> : <img className={stylesHeader.logo} src="/images/logo.png" alt="Logo pizzeri GhostPizza" />}</Header>
       <main className={styles.main}>
         <div className={styles.left}>
-          <h1>Witaj na stronie Pizzerii GhostPizza.</h1>
+          <h1>Witaj na stronie Pizzerii <span>Ghost Pizza</span></h1>
           <p className={styles.text}>Masz ochotę na pizzę?</p>
           <p className={styles.text}>Zamów już teraz z dowozem lub odbiorem.</p>
           <p className={classNames(styles.text, styles.promo)}><span className={styles['special-word1']}>Promocja</span> Druga pizza (30cm) -50% taniej (od poniedziałku do czwartku).</p>
