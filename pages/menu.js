@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Menu.module.css';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faLeaf } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -40,14 +40,14 @@ export default function Menu() {
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ghost-pizza.pl/" />
+        <meta property="og:url" content="https://ghost-pizza.pl/menu" />
         <meta property="og:title" content="Ghost Pizza | Menu" />
         <meta property="og:description" content="U nas zamówisz największą i najlepszą pizzę w Obornikach. Nie czekaj, zadzwoń już teraz." />
         <meta property="og:image" content="https://ghost-pizza.pl/images/logo.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://ghost-pizza.pl/" />
+        <meta property="twitter:url" content="https://ghost-pizza.pl/menu" />
         <meta property="twitter:title" content="Ghost Pizza | Menu" />
         <meta property="twitter:description" content="U nas zamówisz największą i najlepszą pizzę w Obornikach. Nie czekaj, zadzwoń już teraz." />
         <meta property="twitter:image" content="https://ghost-pizza.pl/images/logo.png" />
@@ -55,6 +55,7 @@ export default function Menu() {
       <Header><img className={styles.logo} src="/images/logo2.png" alt="Logo pizzeri GhostPizza" /></Header>
       <main className={styles.main}>
         <h2>Pizza:</h2>
+        <div className={styles.vege}><div className={styles.circle}><FontAwesomeIcon icon={faLeaf} className={styles.leaf} /></div>VEGE? Zapytaj obsługę</div>
         <div className={styles.legend}>
           <div><SmallPizza />30cm (1-2 os)</div>
           <div><MediumPizza />40cm (2-3 os)</div>
