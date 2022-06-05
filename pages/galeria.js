@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Gallery.module.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import FixedCallBtn from '../components/FixedCallBtn';
 import config from "../config.json";
 import Script from 'next/script';
 import images from '../images.json';
@@ -48,6 +49,7 @@ export default function Menu() {
           {imgs}
         </div>
       </main>
+      <FixedCallBtn />
     <Footer />
   </div>)
 }

@@ -123,26 +123,6 @@
     margin-right: 10px;
 }
 
-.phone {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    background-color: #f7941f;
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: fit-content;
-    font-weight: 400;
-  }
-  
-  .phone .phone-icon {
-    margin-right: 7px;
-  }
-
 @media (max-width: 915px) {
 
     .product {

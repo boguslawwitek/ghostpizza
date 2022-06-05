@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import styles from '../styles/Menu.module.css';
-import { faPhone, faLeaf } from '@fortawesome/free-solid-svg-icons';
+import { faLeaf } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import FixedCallBtn from '../components/FixedCallBtn';
 import config from "../config.json";
 import Script from 'next/script';
 const umamiDataWebsiteID = config.umamiDataWebsiteID;
@@ -284,7 +285,7 @@ export default function Menu() {
           </div>
         </div>
       </main>
-      <a className="phone-link" href='tel:724444560'><div className={styles.phone}><FontAwesomeIcon className={styles['phone-icon']} icon={faPhone} /> 72 4444 560</div></a>
+      <FixedCallBtn />
     <Footer />
   </div>)
 }
