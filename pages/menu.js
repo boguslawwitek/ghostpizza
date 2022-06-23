@@ -37,20 +37,20 @@ export default function Menu() {
         
         {/* Primary Meta Tags */}
         <meta name="title" content="Ghost Pizza | Menu" />
-        <meta name="description" content="U nas zamówisz największą i najlepszą pizzę w Obornikach. Nie czekaj, zadzwoń już teraz." />
+        <meta name="description" content="Po prostu zakochaj się w naszej pizzy. Spróbuj przepysznego sera w naszej Marghericie, świeżych warzyw w Tajemniczym Ogrodzie i wiele więcej..." />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://ghost-pizza.pl/menu" />
         <meta property="og:title" content="Ghost Pizza | Menu" />
-        <meta property="og:description" content="U nas zamówisz największą i najlepszą pizzę w Obornikach. Nie czekaj, zadzwoń już teraz." />
+        <meta property="og:description" content="Po prostu zakochaj się w naszej pizzy. Spróbuj przepysznego sera w naszej Marghericie, świeżych warzyw w Tajemniczym Ogrodzie i wiele więcej..." />
         <meta property="og:image" content="https://ghost-pizza.pl/images/logo.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://ghost-pizza.pl/menu" />
         <meta property="twitter:title" content="Ghost Pizza | Menu" />
-        <meta property="twitter:description" content="U nas zamówisz największą i najlepszą pizzę w Obornikach. Nie czekaj, zadzwoń już teraz." />
+        <meta property="twitter:description" content="Po prostu zakochaj się w naszej pizzy. Spróbuj przepysznego sera w naszej Marghericie, świeżych warzyw w Tajemniczym Ogrodzie i wiele więcej..." />
         <meta property="twitter:image" content="https://ghost-pizza.pl/images/logo.png" />
       </Head>
       <Header><img className={styles.logo} src="/images/logo2.png" alt="Logo pizzeri GhostPizza" /></Header>
@@ -66,122 +66,122 @@ export default function Menu() {
           <div className={styles.product}>
             <div className={styles.name}>1. Margherita</div>
             <div>sos pomidorowy, ser</div>
-            <div className={styles.price}><span><SmallPizza />18zł</span> <span><MediumPizza />25zł</span><span><BigPizza />32zł</span></div>
+            <div className={styles.price}><span><SmallPizza />19zł</span> <span><MediumPizza />27zł</span><span><BigPizza />35zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>2. Pieczara</div>
             <div>sos pomidorowy, ser, pieczarki</div>
-            <div className={styles.price}><span><SmallPizza />23zł</span> <span><MediumPizza />32zł</span><span><BigPizza />41zł</span></div>
+            <div className={styles.price}><span><SmallPizza />25zł</span> <span><MediumPizza />35zł</span><span><BigPizza />45zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>3. Scooby-doo</div>
             <div>sos pomidorowy, ser, szynka</div>
-            <div className={styles.price}><span><SmallPizza /> 24zł</span> <span><MediumPizza />34zł</span><span><BigPizza />44zł</span></div>
+            <div className={styles.price}><span><SmallPizza /> 26zł</span> <span><MediumPizza />37zł</span><span><BigPizza />48zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>4. Ninja</div>
             <div>sos pomidorowy, ser, salami</div>
-            <div className={styles.price}><span><SmallPizza /> 24zł</span> <span><MediumPizza />34zł</span><span><BigPizza />44zł</span></div>
+            <div className={styles.price}><span><SmallPizza /> 26zł</span> <span><MediumPizza />37zł</span><span><BigPizza />48zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>5. Capricciosa</div>
             <div>sos pomidorowy, ser, szynka, pieczarki</div>
-            <div className={styles.price}><span><SmallPizza /> 29zł</span> <span><MediumPizza />41zł</span><span><BigPizza />53zł</span></div>
+            <div className={styles.price}><span><SmallPizza /> 31zł</span> <span><MediumPizza />44zł</span><span><BigPizza />57zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>6. Carbonara</div>
             <div>sos serowo-grzybowy, ser, boczek, czosnek, pietruszka</div>
-            <div className={styles.price}><span><SmallPizza />30zł</span> <span><MediumPizza />42zł</span><span><BigPizza />54zł</span></div>
+            <div className={styles.price}><span><SmallPizza />32zł</span> <span><MediumPizza />45zł</span><span><BigPizza />58zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>7. Rytuał</div>
             <div>sos pomidorowy, ser, salami, pieczarki, papryka świeża, cebula</div>
-            <div className={styles.price}><span><SmallPizza />32zł</span> <span><MediumPizza />45zł</span><span><BigPizza />58zł</span></div>
+            <div className={styles.price}><span><SmallPizza />34zł</span> <span><MediumPizza />48zł</span><span><BigPizza />62zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>8. Plaga</div>
             <div>sos pomidorowy, ser, szynka, papryka świeża, pomidorki cherry, cebula, szczypiorek, ogórek zielony</div>
-            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
+            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>9. The Ring <PepperIcon /><PepperIcon /></div>
             <div>sos pomidorowy, ser, salami, cebula, jalapeno</div>
-            <div className={styles.price}><span><SmallPizza />31zł</span> <span><MediumPizza />44zł</span><span><BigPizza />57zł</span></div>
+            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>10. Dracula <PepperIcon /></div>
             <div>sos pomidorowy, ser, tuńczyk, cebula, czosnek, sos amerykański</div>
-            <div className={styles.price}><span><SmallPizza />31zł</span> <span><MediumPizza />44zł</span><span><BigPizza />57zł</span></div>
+            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>11. Pozytywka</div>
             <div>sos pomidorowy, ser, kurczak, pieczarki, brzoskwinia</div>
-            <div className={styles.price}><span><SmallPizza />31zł</span> <span><MediumPizza />44zł</span><span><BigPizza />57zł</span></div>
+            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>12. Dom w głębi lasu</div>
             <div>sos serowo-grzybowy, ser, kurczak, pieczarki, brokuł</div>
-            <div className={styles.price}><span><SmallPizza />32zł</span> <span><MediumPizza />45zł</span><span><BigPizza />58zł</span></div>
+            <div className={styles.price}><span><SmallPizza />34zł</span> <span><MediumPizza />48zł</span><span><BigPizza />62zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>13. Oszukać przeznaczenie</div>
             <div>sos pomidorowy, ser, pieczarki, papryka świeża, brokuł, pomidorki cherry, oliwki czarne, kukurydza, kurczak</div>
-            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
+            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>14. Piła <PepperIcon /></div>
             <div>sos pomidorowy, ser, salami, konfitura cebulowa, ser kozi, wasabi</div>
-            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
+            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
           </div>
           <div className={styles.product}>
-            <div className={styles.name}>15. Winchester</div>
-            <div>sos pomidorowy, ser, camembert, feta, papryka świeża, nuggetsy</div>
-            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
+            <div className={styles.name}>15. Zombie</div>
+            <div>sos pomidorowy, mozzarella, camembert, feta, ser pleśniowy</div>
+            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>16. Chucky</div>
             <div>sos pomidorowy, ser, kurczak, feta, suszone pomidory, rukola</div>
-            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
+            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>17. Troll</div>
             <div>sos pomidorowy, ser, kurczak, szpinak, ser pleśniowy, słonecznik</div>
-            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
+            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>18. Krwawa uczta</div>
             <div>sos pomidorowy, ser, szynka, salami, boczek, kiełbasa, cebula</div>
-            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
+            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>19. Mumia</div>
             <div>sos serowo-grzybowy, ser, kiełbasa, boczek, salami, ogórek kiszony, prażona cebula</div>
-            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
+            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>20. Tajemniczy ogród</div>
             <div>sos pomidorowy, ser, mix sałat, kurczak, pomidorki cherry, ogórek zielony, szczypiorek, sos czosnkowy lub łagodny</div>
-            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
+            <div className={styles.price}><span><SmallPizza />37zł</span> <span><MediumPizza />54zł</span><span><BigPizza />71zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>21. Krzyk</div>
             <div>sos pomidorowy, podwójny ser, kurczak, salami, pomidorki cherry</div>
-            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
+            <div className={styles.price}><span><SmallPizza />37zł</span> <span><MediumPizza />54zł</span><span><BigPizza />71zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>22. Teksańska masakra</div>
             <div>sos serowo-grzybowy, ser, salami, papryka, kukurydza, nachosy, salsa gucamole</div>
-            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
+            <div className={styles.price}><span><SmallPizza />36zł</span> <span><MediumPizza />52zł</span><span><BigPizza />68zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>23. Ghost Pizza <PepperIcon /><PepperIcon /></div>
             <div>sos pomidorowy, ser, podwójny kurczak, ser pleśniowy, jalapeno</div>
-            <div className={styles.price}><span><SmallPizza />36zł</span> <span><MediumPizza />51zł</span><span><BigPizza />66zł</span></div>
+            <div className={styles.price}><span><SmallPizza />38zł</span> <span><MediumPizza />55zł</span><span><BigPizza />72zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>24. Monster</div>
             <div>sos pomidorowy, ser, boczek, jabłko, camembert, syrop klonowy, prażona cebula</div>
-            <div className={styles.price}><span><SmallPizza />33zł</span> <span><MediumPizza />47zł</span><span><BigPizza />61zł</span></div>
+            <div className={styles.price}><span><SmallPizza />35zł</span> <span><MediumPizza />50zł</span><span><BigPizza />65zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>25. Ty będziesz następna...</div>
@@ -192,19 +192,19 @@ export default function Menu() {
         <div className={styles.container}>
           <div className={styles.product}>
             <div className={styles.name}>Dodatek mięsny</div>
-            <div className={styles.price}><span><SmallPizza />6zł</span> <span><MediumPizza />9zł</span><span><BigPizza />12zł</span></div>
+            <div className={styles.price}><span><SmallPizza />7zł</span> <span><MediumPizza />10zł</span><span><BigPizza />13zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>Dodatek warzywny</div>
-            <div className={styles.price}><span><SmallPizza />5zł</span> <span><MediumPizza />7zł</span><span><BigPizza />9zł</span></div>
+            <div className={styles.price}><span><SmallPizza />6zł</span> <span><MediumPizza />8zł</span><span><BigPizza />10zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>Dodatkowy ser</div>
-            <div className={styles.price}><span><SmallPizza />6zł</span> <span><MediumPizza />9zł</span><span><BigPizza />12zł</span></div>
+            <div className={styles.price}><span><SmallPizza />7zł</span> <span><MediumPizza />10zł</span><span><BigPizza />13zł</span></div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>Zamiana na ser vege</div>
-            <div className={styles.price}><span><SmallPizza />6zł</span> <span><MediumPizza />9zł</span><span><BigPizza />12zł</span></div>
+            <div className={styles.price}><span><SmallPizza />7zł</span> <span><MediumPizza />10zł</span><span><BigPizza />13zł</span></div>
           </div>
         </div>
         <h2>Sosy (3zł):</h2>
@@ -229,6 +229,9 @@ export default function Menu() {
           </div>
           <div className={styles.product}>
             <div className={styles.name}>Pomidorowy</div>
+          </div>
+          <div className={styles.product}>
+            <div className={styles.name}>Ketchup</div>
           </div>
           <div className={styles.product}>
             <div className={styles.name}>Ketchup curry</div>
