@@ -1,9 +1,9 @@
 # Overview
-A simple website for GhostPizza pizzeria.
-Demo: [ghost-pizza.pl](https://ghost-pizza.pl).
+A simple website for GhostPizza pizzeria.<br>
+Demo: [ghost-pizza.pl](https://ghost-pizza.pl)
 
 # Technologies
-- Next.js
+![nextjs](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 
 # Installation
 ```
