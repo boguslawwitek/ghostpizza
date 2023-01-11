@@ -9,6 +9,9 @@ import Footer from '../components/Footer';
 import stylesHeader from '../styles/Header.module.css';
 import config from "../config.json";
 import Script from 'next/script';
+import Image from 'next/image';
+import logoPic from '../public/images/logo.png';
+import logoDesktopPic from '../public/images/logo_desktop.png';
 const umamiDataWebsiteID = config.umamiDataWebsiteID;
 const umamiSrc = config.umamiSrc;
 
@@ -56,14 +59,14 @@ export default function Home() {
         <meta property="twitter:image" content="https://ghost-pizza.pl/images/logo.png" />
       </Head>
       <div className={styles.container}>
-      <Header>{innerWidth > 1450 ? <img className={stylesHeader.logo} src="/images/logo_desktop.png" alt="Logo pizzeri GhostPizza" /> : <img className={stylesHeader.logo} src="/images/logo.png" alt="Logo pizzeri GhostPizza" />}</Header>
+      <Header>{innerWidth > 1450 ? <div className={stylesHeader['img-container']}><Image priority responsive="true" style={{objectFit: "contain"}} className={stylesHeader.logo} src={logoDesktopPic} alt="Logo pizzeri GhostPizza" /></div> : <div className={stylesHeader['img-container']}><Image responsive="true" style={{objectFit: "contain"}} className={stylesHeader.logo} src={logoPic} alt="Logo pizzeri GhostPizza" /></div>}</Header>
       <main className={styles.main}>
         <div className={styles.left}>
           <h1>Witaj na stronie Pizzerii <span>Ghost Pizza</span></h1>
           <p className={styles.text}>Masz ochotę na pizzę?</p>
           <p className={styles.text}>Zamów już teraz z dowozem lub odbiorem.</p>
           <p className={classNames(styles.text, styles.promo)}><span className={styles['special-word1']}>Promocja</span> Druga pizza (30cm) -50% taniej (od poniedziałku do czwartku).</p>
-          <p className={classNames(styles.text, styles.special)}>Dowóz na terenie Obornik <span className={styles['special-word2']}>gratis</span>, poza Obornikami 2zł/km (tylko zamówienia powyżej 40 zł). Zamówienia z dowozem najpóźniej na 30 minut przed zamknięciem. Płatność kartą po uprzednim poinformowaniu.</p>
+          <p className={classNames(styles.text, styles.special)}>Dowóz na terenie Obornik <span className={styles['special-word2']}>gratis</span>, poza Obornikami 3zł/km (tylko zamówienia powyżej 40 zł). Zamówienia z dowozem najpóźniej na 30 minut przed zamknięciem. Płatność kartą po uprzednim poinformowaniu.</p>
           <a className="phone-link" href='tel:724444560'><div className={styles.phone}><FontAwesomeIcon className={styles['phone-icon']} icon={faPhone} /> 72 4444 560</div></a>
         </div>
         <div className={styles.right}>

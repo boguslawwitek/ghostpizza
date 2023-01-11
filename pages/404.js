@@ -6,7 +6,7 @@ export default function Custom404() {
         <div className={styles.container}>
             <img className={styles.logo} src="/images/logo2.png" alt="Logo pizzeri GhostPizza" />
             <h1>404 | Nie znaleźliśmy takiej strony.</h1>
-            <Link href="/"><a>Powrót do strony głównej</a></Link>
+            <Link href="/">Powrót do strony głównej</Link>
         </div>
     )
 }

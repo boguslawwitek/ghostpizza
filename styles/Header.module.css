@@ -32,6 +32,13 @@
   .logo {
     width: 100%;
     max-width: 2000px;
+    height: auto;
+  }
+
+  .img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
 
   @media (max-width: 480px) {

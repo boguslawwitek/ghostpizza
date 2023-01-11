@@ -6,9 +6,9 @@ export default function Header({children}) {
       <header className={styles.header}>
         <nav>
           <ul>
-            <li><Link href="/"><a>Strona główna</a></Link></li>
-            <li><Link href="/menu"><a>Menu</a></Link></li>
-            <li><Link href="/galeria"><a>Galeria</a></Link></li>
+            <li><Link href="/">Strona główna</Link></li>
+            <li><Link href="/menu">Menu</Link></li>
+            <li><Link href="/galeria">Galeria</Link></li>
           </ul>
         </nav>
         <div className="image-column">

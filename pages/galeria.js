@@ -10,11 +10,11 @@ const imagesArray = images.imagesArray;
 const umamiDataWebsiteID = config.umamiDataWebsiteID;
 const umamiSrc = config.umamiSrc;
 
-export default function Menu() {
+export default function Gallery() {
 
-  const imgs = imagesArray.map(img => (<>
-    <img className={styles.image} src={`/images/gallery/${img.src}`} alt="" />
-  </>));
+  const imgs = imagesArray.map(img => (
+    <img key={img.src} className={styles.image} src={`/images/gallery/${img.src}`} alt="" />
+  ));
 
   return (<div className={styles.bg}>
       {umamiDataWebsiteID && umamiSrc ? <Script src={umamiSrc} data-website-id={umamiDataWebsiteID} async defer></Script> : null}
