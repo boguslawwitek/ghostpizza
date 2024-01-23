@@ -35,6 +35,12 @@
     height: auto;
   }
 
+  .logo-small {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 650px;
+  }
+
   .img-container {
     position: relative;
     width: 100%;

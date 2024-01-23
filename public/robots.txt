@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://ghost-pizza.pl/
-
-# Sitemaps
-Sitemap: https://ghost-pizza.pl/sitemap.xml

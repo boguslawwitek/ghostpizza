@@ -23,12 +23,6 @@
     align-content: flex-start;
 }
 
-.logo {
-    margin-top: 20px;
-    width: 90%;
-    max-width: 650px;
-}
-
 .main h2 {
     text-align: center;
     font-size: 5rem;
