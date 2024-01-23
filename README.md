@@ -1,7 +1,7 @@
 # Overview
 A simple website for GhostPizza pizzeria.<br>
-Frontend: [ghost-pizza.pl](https://ghost-pizza.pl)
-Backend in strapi: [ghost-pizza.pl/admin](https://ghost-pizza.pl/admin)
+Frontend: [ghost-pizza.pl](https://ghost-pizza.pl) <br>
+Backend in strapi: [github.com/boguslawwitek/ghostpizza-backend](https://github.com/boguslawwitek/ghostpizza-backend)
 
 # Technologies
 ![nextjs](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
