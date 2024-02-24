@@ -54,28 +54,28 @@ async function getSaucePrice() {
 }
 
 async function getPizzas() {
-    const res = await fetch(`${process.env.API_URL}/api/pizzas?sort=Pozycja`, {
+    const res = await fetch(`${process.env.API_URL}/api/pizzas?sort=Pozycja&pagination[pageSize]=1000`, {
       headers: {Authorization: `Bearer ${process.env.API_TOKEN}`}
     });
     return res.json()
 }
 
 async function getAdditions() {
-    const res = await fetch(`${process.env.API_URL}/api/additions?sort=Pozycja`, {
+    const res = await fetch(`${process.env.API_URL}/api/additions?sort=Pozycja&pagination[pageSize]=1000`, {
       headers: {Authorization: `Bearer ${process.env.API_TOKEN}`}
     });
     return res.json()
 }
 
 async function getSauces() {
-    const res = await fetch(`${process.env.API_URL}/api/sauces?sort=Pozycja`, {
+    const res = await fetch(`${process.env.API_URL}/api/sauces?sort=Pozycja&pagination[pageSize]=1000`, {
       headers: {Authorization: `Bearer ${process.env.API_TOKEN}`}
     });
     return res.json()
 }
 
 async function getDrinks() {
-    const res = await fetch(`${process.env.API_URL}/api/drinks?sort=Pozycja`, {
+    const res = await fetch(`${process.env.API_URL}/api/drinks?sort=Pozycja&pagination[pageSize]=1000`, {
       headers: {Authorization: `Bearer ${process.env.API_TOKEN}`}
     });
     return res.json()
@@ -85,6 +85,7 @@ export default async function Menu() {
     const sizes = await getSizes();
     const saucePrice = await getSaucePrice();
     const pizzas = await getPizzas();
+    console.log(pizzas);
     const additions = await getAdditions();
     const sauces = await getSauces();
     const drinks = await getDrinks();

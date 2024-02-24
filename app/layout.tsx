@@ -9,6 +9,8 @@ config.autoAddCss = false;
 const oswald = Oswald({ subsets: ['latin'] })
 const openGraphImage = { images: ['https://ghost-pizza.pl/images/logo.png'] }
 
+export const revalidate = 900
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://ghost-pizza.pl'),
   title: 'Ghost Pizza',
